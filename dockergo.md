@@ -15,7 +15,11 @@
     使用 sudo docker run  userName/systemName  command commandArgument
     运行 docker 镜像中的命令
 ## docker 安装其它应用
-    安装的镜像是ubuntu  所以使用apt-get install命令
+    安装的镜像是ubuntu  所以使用apt-get install命令安装。
+* 问题来啦!
+        docker 环境无法响应命令交互选项?
+        你的命名必须是明确的。
+        如：sudo docker run ubuntu apt-get install -y ping
 
 
 
