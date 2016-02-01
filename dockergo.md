@@ -17,9 +17,16 @@
 ## docker 安装其它应用
     安装的镜像是ubuntu  所以使用apt-get install命令安装。
 * 问题来啦!
-        docker 环境无法响应命令交互选项?
+        1 docker 环境无法响应命令交互选项?
         你的命名必须是明确的。
         如：sudo docker run ubuntu apt-get install -y ping
+        运行ping命令吧！
+        2 Oh,No. ping 不通.重置一下网络let us do:
+            sudo pkill docker 
+            sudo iptables -t nat -F
+            mingyi@YIMING:~$ sudo ifconfig docker0 down
+        运行第二次吧！
+
 
 
 
